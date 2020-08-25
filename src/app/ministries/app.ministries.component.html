@@ -1,0 +1,91 @@
+<!--Navigation bar-->
+<app-nav-template></app-nav-template>
+
+<h3 class="text-center" >Our Ministries</h3>
+
+<!--Accordion tabs-->
+<div class="accordion inverse-toggler" id="accordionExample">
+  <div class="card bg-light">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fa fa-angle-right"></i>  Family
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+  <div class="card bg-light ">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <i class="fa fa-angle-right"></i>Youth & Young Adult
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+  <div class="card bg-light ">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <i class="fa fa-angle-right"></i>Adult Ministries
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+          <i class="fa fa-angle-right"></i> Missions
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Be sure to adjust settings in toggler css nav items change-->
+
+<div class=" container toggler  nav-justified" >
+  <ul class="nav nav-pills pill-1" style="white-space: nowrap;">
+    <li class="nav-item">
+      <a class="nav-link   active" data-toggle="pill" >Family</a>
+    </li>
+    <li class="nav-item pill-2" routerLink fragment="youth-and-young-adults">
+      <a class="nav-link " data-toggle="pill" href="#youth">Youth & Young Adults</a>
+    </li>
+    <li class="nav-item pill-3">
+      <a class="nav-link " data-toggle="pill" href="#adult">Adult Ministries</a>
+    </li>
+    <li class="nav-item pill-4">
+      <a class="nav-link " data-toggle="pill" href="#missions">Missions</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane container active" id="family">family</div>
+    <div class="tab-pane container fade" id="youth">youth </div>
+    <div class="tab-pane container fade" id="adult">adult</div>
+    <div class="tab-pane container fade" id="missions">mission</div>
+  </div>
+</div>
+
+<!--Footer-->
+<app-footer-template> </app-footer-template>
