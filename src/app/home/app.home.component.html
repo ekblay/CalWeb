@@ -1,0 +1,81 @@
+
+
+
+<div id="Carousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="Carousel" data-slide-to="0" class="active"></li>
+    <li data-target="Carousel" data-slide-to="1"></li>
+    <li data-target="Carousel" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img [src]="images[0]" alt="Church Picure" width="3757" height="1532">
+    </div>
+    <div class="carousel-item">
+      <img  [src] ="images[1]" alt="Chicago" width="3757" height="1532">
+    </div>
+    <div class="carousel-item">
+      <img [src]="images[2]" alt="New York" width="3757" height="1532">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#Carousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#Carousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!--Navigation bar-->
+
+<app-nav-template></app-nav-template>
+
+<!--Welcome image-->
+<div class="welcome-image parallax">
+  <div class="mask rgba-black-light align-items-center">
+    <!-- Content -->
+    <div class="container col-md-12 mb-4 white-text text-center">
+      <h2 class="welcome-text col-md-12 mb-4 white-text text-center ">Welcome To Calvary Church</h2>
+      <h4 class ="welcome-text " style="margin-bottom: 70px">Church outside the walls; Church beyond the walls</h4>
+      <div style="margin-bottom: 20px">
+        <button class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
+          <i class="fas fa-pray"></i>
+          Need Prayer?</button>
+        <button class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
+          <i class="fas fa-shopping-cart"></i>
+          Need help with Groceries/Errands?</button>
+        <button class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" >
+          <i class="fas fa-comment-medical"></i>
+          Need someone to talk to?</button>
+      </div>
+      <div>
+        <label class="">
+          <h5 class = "welcome-text">Next Steps: </h5></label>
+        <button class="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
+          <i class="fas fa-link"></i>
+          Get Connected</button>
+        <button class="btn btn-info  btn-primary btn-lg  btn-responsive btn-format">
+          <i class="fas fa-sms"></i>
+          Speak to a pastor</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!--Footer-->
+<app-footer-template> </app-footer-template>
+
+
+
+
+
+
+
