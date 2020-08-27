@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import {Component, NgModule, } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppHomeComponent } from './home/app.home.component';
@@ -37,9 +37,7 @@ export class FooterComponent {}
 
 
 const routes: Routes = [
-  {path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
   {path: 'services', component: AppServicesComponent}
@@ -54,7 +52,7 @@ const routes: Routes = [
     FooterComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppInitComponent],
   exports: [RouterModule]
 })
