@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './app.home.component.html'
 })
 export class AppHomeComponent {
-  images = ['./assets/img/church.jpg', './assets/img/flags1.jpg', './assets/img/pastor1.jpg'];
+  images = ['./assets/img/church.jpg', './assets/img/rememberanceDay.jpg', './assets/img/palmSunday.jpg'];
 
   public constructor(private titleService: Title) {
     titleService.setTitle('Home - Calvary Church');
