@@ -21,8 +21,8 @@
   height: 100%;
 }
 .welcome-image {
-  background-image: url('/assets/img/charlottetown.jpg');
-  background-color: #cccccc; /* Used if the image is unavailable */
+  background-image: url('/assets/img/Charlottetown.jpg');
+  /*background-color: #cccccc; !* Used if the image is unavailable *!*/
   min-height: 750px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
