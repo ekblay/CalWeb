@@ -2,8 +2,14 @@ import {BrowserModule, Title} from '@angular/platform-browser';
 import {Component, NgModule, } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppHomeComponent } from './home/app.home.component';
-import {AppMinistriesComponent} from './ministries/app.ministries.component';
 import {AppServicesComponent} from './services/app.services.component';
+import {
+  AppAdultsComponent,
+  AppFamilyComponent,
+  AppMissionsComponent,
+  AppYoungAdultsComponent,
+  AppYouthComponent
+} from './ministries/app.ministries.component';
 
 
 @Component({
@@ -39,14 +45,22 @@ export class FooterComponent {}
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: AppHomeComponent},
-  {path: 'ministries', component: AppMinistriesComponent},
+  {path: 'ministries-family', component: AppFamilyComponent},
+  {path: 'ministries-youth', component: AppYouthComponent},
+  {path: 'ministries-young-adults', component: AppYoungAdultsComponent},
+  {path: 'ministries-adults', component: AppAdultsComponent},
+  {path: 'ministries-missions', component: AppMissionsComponent},
   {path: 'services', component: AppServicesComponent}
   ];
 
 @NgModule({
   declarations: [AppInitComponent,
     AppHomeComponent,
-    AppMinistriesComponent,
+    AppFamilyComponent,
+    AppYouthComponent,
+    AppYoungAdultsComponent,
+    AppAdultsComponent,
+    AppMissionsComponent,
     AppServicesComponent,
     NavigationComponent,
     FooterComponent
