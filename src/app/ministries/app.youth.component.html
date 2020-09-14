@@ -1,25 +1,32 @@
-<div style=" background-color: #a2a19f">
-<!--Navigation bar-->
-<app-nav-template></app-nav-template>
-<div style="height: 500px">
-<img [src]="escapeImage" alt="Church Picture" style="width: 100%; height: 100%">
+
+<div class="parallax parallax-image container4" [ngStyle]="{'background-image': getUrl()}" >
+  <div >
+    <h4  style="font-family: 'Indie Flower', cursive; font-size: 50px; color: white;">
+      Youth</h4>
+  </div>
+</div>
+<div class="container col-md-12 mb-4" >
+  <h4 style=" font-family: 'Indie Flower', cursive; font-weight: bold; margin-top: 5px ">
+    Youth
+  </h4>
+  <h4 class="ministry-content" style="margin-top: 5px; margin-bottom: 5px; line-height: 35px; font-size: 25px">
+    Escape Youth is a group designed for those who are in grades 7-12. We meet weekly on Fridays at 7pm.</h4>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"> Learn more</button>
+  <div id="demo" class="collapse">
+    <h4 class="ministry-content" style="margin-top: 5px; margin-bottom: 5px; line-height: 35px; font-size: 20px">
+      We always have a blast playing games, eating snacks, hanging out, worshiping and learning more about
+      our walk with Christ as our leaders share relevant devotional thoughts. Escape Youth and its leaders
+      are always there for us when we need a safe place to land. Our group is always there for each other.
+      The teens at Escape Youth are passionate about God and showing His love to our city and abroad.<br>
+      We definitely go against the stereotype of how it isn't "cool" to be a Christian and follow Christ.
+      We strive to make people wonder, "What makes these kids so different?"<br>
+      <br>
+
+      Spoiler alert: It is Jesus!
+    </h4>
+  </div>
+
 </div>
 
-<div class="container col-md-12 mb-4 white-text text-center" >
-<!--<h4 style="font-size: 70px; font-family: 'Homemade Apple', cursive;font-family: 'Quantico', sans-serif;">-->
-<!--  Escape Youth</h4>-->
-<hr>
- <h5 class="text-center ministry-content">
-   Escape Youth is a group designed for those who are in grades 7-12. We meet weekly on Fridays at 7pm.<br>
-   We always have a blast playing games, eating snacks, hanging out, worshiping and learning more about <br>
-   our walk with Christ as our leaders share relevant devotional thoughts. Escape Youth and its leaders<br>
-   are always there for us when we need a safe place to land. Our group is always there for each other.<br>
-   The teens at Escape Youth are passionate about God and showing His love to our city and abroad.<br>
-   We definitely go against the stereotype of how it isn't "cool" to be a Christian and follow Christ.<br>
-  We strive to make people wonder, "What makes these kids so different?".<br>
- </h5>
-  <h4>Spoiler alert: It is Jesus!</h4>
-</div>
-<!--Footer-->
-<app-footer-template> </app-footer-template>
-</div>
+

@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Quantico:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Quantico:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 .logo{
   font-family: 'Homemade Apple', cursive;
   font-family: 'Quantico', sans-serif;
@@ -42,8 +43,9 @@ h5 {
   width: 80px;
 }
 .welcome-text{
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Indie Flower', cursive;
   color: #fafafe;
+  font-weight: bolder;
 }
 .btn-format{
   font-family: 'Homemade Apple', cursive;
@@ -77,48 +79,34 @@ footer {
   color: rgba(97, 96, 94, 0.95);
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #4c51d9;
-  font-size: 17px;
-
-}
-
-
-.pill-1 a {
-  background-color: rgba(129, 164, 255, 0.91);
-  font-size: 15px;
-  margin-right: 5px;
-  color: white;
-}
-
-/*!*Collapse nav tabs*! */
-/*Be  sure to adjust settings if more items are added to tabs as max-width changes*/
-@media screen and (max-width: 767px) {
-  div.toggler {
-    display: none;
-  }
-}
-@media screen and (min-width: 767.5px) {
-  div.inverse-toggler {
-    display: none;
-  }
-}
 
 
 
-.accordion .fa{
-  margin-right: 0.5rem;
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
-  top: 2px;
-}
 
 .ministry-content{
-  font-family: 'Gayathri', sans-serif;
-  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: normal;
 
 }
+.parallax-image{
+  background-color: #cccccc; /* Used if the image is unavailable */
+ min-height: 250px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height : 100%
+}
+/* Centered text */
+
+div.container4 {
+  height: 10em;
+  position: relative }
+div.container4 h4 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }

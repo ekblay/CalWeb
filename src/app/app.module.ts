@@ -5,11 +5,12 @@ import { AppHomeComponent } from './home/app.home.component';
 import {AppServicesComponent} from './services/app.services.component';
 import {
   AppAdultsComponent,
-  AppFamilyComponent,
+  AppFamilyComponent, AppMinistriesComponent,
   AppMissionsComponent,
   AppYoungAdultsComponent,
   AppYouthComponent
 } from './ministries/app.ministries.component';
+import {AppAboutUsComponent} from './about-us/app.aboutUs.component';
 
 
 @Component({
@@ -45,17 +46,16 @@ export class FooterComponent {}
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: AppHomeComponent},
-  {path: 'ministries-family', component: AppFamilyComponent},
-  {path: 'ministries-youth', component: AppYouthComponent},
-  {path: 'ministries-young-adults', component: AppYoungAdultsComponent},
-  {path: 'ministries-adults', component: AppAdultsComponent},
-  {path: 'ministries-missions', component: AppMissionsComponent},
-  {path: 'services', component: AppServicesComponent}
+  {path: 'ministries', component: AppMinistriesComponent},
+  {path: 'services', component: AppServicesComponent},
+  {path: 'about-us', component: AppAboutUsComponent}
   ];
 
 @NgModule({
   declarations: [AppInitComponent,
     AppHomeComponent,
+    AppMinistriesComponent,
+    AppAboutUsComponent,
     AppFamilyComponent,
     AppYouthComponent,
     AppYoungAdultsComponent,
