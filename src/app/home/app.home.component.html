@@ -1,36 +1,8 @@
 
+  <div class="">
+    <img [src]=images[0] style="height: 500px; width: 100% " >
 
-
-<div id="Carousel" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="Carousel" data-slide-to="0" class="active"></li>
-    <li data-target="Carousel" data-slide-to="1"></li>
-    <li data-target="Carousel" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img [src]="images[0]" alt="Church Picture" width="3757" height="1532">
-    </div>
-    <div class="carousel-item">
-      <img  [src] ="images[1]" alt="Chicago" width="3757" height="1532">
-    </div>
-    <div class="carousel-item">
-      <img [src]="images[2]" alt="New York" width="3757" height="1532">
-    </div>
   </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#Carousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#Carousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
 
 <!--Navigation bar-->
 
@@ -41,21 +13,21 @@
   <div class="mask rgba-black-light align-items-center">
     <!-- Content -->
     <div class="container col-md-12 mb-4 white-text text-center" >
-      <h1 class="welcome-text col-md-12 mb-4 white-text text-center"  >Welcome To Calvary Church</h1>
-      <h2 class ="welcome-text " style="margin-bottom: 70px">Church outside the walls; Church beyond the walls</h2>
+      <h1 class="welcome-text" >Welcome To Calvary Church</h1>
+      <h2 class ="welcome-text" style="margin-bottom: 70px">Church outside the walls; Church beyond the walls</h2>
       <div style="margin-bottom: 20px">
 
         <a href="https://calvarypei.churchcenter.com/people/forms/165700" data-open-in-church-center-modal="true"
-           class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
+           target="_blank"  class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
           <i class="fas fa-pray"></i>
           Need Prayer?</a>
 
         <a href="https://calvarypei.churchcenter.com/people/forms/165471" data-open-in-church-center-modal="true"
-                class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
+           target="_blank"   class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
           <i class="fas fa-shopping-cart"></i>
           Need help with Groceries/Errands?</a>
         <a href="https://calvarypei.churchcenter.com/people/forms/165711" data-open-in-church-center-modal="true"
-          class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" >
+           target="_blank" class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" >
           <i class="fas fa-comment-medical"></i>
           Need someone to talk to?</a>
       </div>
@@ -67,7 +39,7 @@
           <i class="fas fa-link"></i>
           Get Connected</a>
         <a href="https://calvarypei.churchcenter.com/people/forms/165805" data-open-in-church-center-modal="true"
-           class="btn btn-info  btn-primary btn-lg  btn-responsive btn-format">
+          target="_blank" class="btn btn-info  btn-primary btn-lg  btn-responsive btn-format">
           <i class="fas fa-sms"></i>
           Speak to a pastor about next steps</a>
       </div>
@@ -79,7 +51,7 @@
 
 <div style="background-color: white">
 
-  <div class="parallax parallax-image container4" [ngStyle]="{'background-image': images[3]}" >
+  <div class="parallax parallax-image container4" [ngStyle]="{'background-image': images[1]}" >
     <div >
       <h4  style="font-family: 'Indie Flower', cursive; font-size: 50px; color: white;">
         Worship with us</h4>
@@ -88,8 +60,23 @@
   <div class="container col-md-12 mb-4 text-center">
     <h5 class="text-center ministry-content" style="margin-top: 5px; margin-bottom: 5px">
      Join Us  </h5>
-    Worship with us every Sunday morning by signing up for one of our two service.
-    We also host our services online on our interactive platform where you can interact and chat with other members
+
+    <p class="ministry-content" style="font-size: 25px">
+      Worship with us every Sunday morning by signing up for one of our two service.</p>
+    <a href="https://www.eventbrite.ca/o/calvary-church-charlottetown-30659669808" target="_blank"
+       class ="btn btn-info  btn-primary btn-sm  btn-responsive btn-format" >
+      <i class="fas fa-pen"></i>
+      Sign up here</a>
+
+    <p class="ministry-content" style="font-size: 25px"> You can also watch our service online by joining us on our scheduled streaming times.
+      Click the button to see our streaming times.
+    </p>
+
+    <a href="https://calvarypei.online.church/" target="_blank"
+       class ="btn btn-info  btn-primary btn-sm  btn-responsive btn-format" >
+      <i class="fas fa-camera"></i>
+      Stream here</a>
+
   </div>
 
 </div>

@@ -1,32 +1,43 @@
 <nav class="navbar navbar-light navbar-expand-md bg-light  justify-content-start sticky-top">
-    <!-- Brand/logo -->
+  <!-- Brand/logo -->
 
-    <a class="navbar-brand logo" routerLink="/home">
-        <img [src]="logoImage" alt="logo" style="width:50px;">
-        Calvary Church
-    </a>
-    <button class="navbar-toggler right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon right"></span>
-    </button>
+  <a class="navbar-brand logo" routerLink="/home">
+    <img [src]="logoImage" alt="logo" style="width:50px;">
+    Calvary Church
+  </a>
+  <button class="navbar-toggler right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon right"></span>
+  </button>
 
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav mx-auto text-md-center text-justify ">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/home">Home</a>
-            </li>
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mx-auto text-md-center text-justify ">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
 
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/services">Services</a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/ministries">Ministries</a>
+      </li>
 
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/ministries">Ministries</a>
-          </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/our-beliefs">What we believe</a>
+          <a class="dropdown-item" href="#">Our Staff</a>
 
-            <li class="nav-item">
-                <a class="nav-link" href="https://calvarypei.online.church/">Watch</a>
-            </li>
-        </ul>
-    </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://calvarypei.online.church/" target="_blank" >Watch</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mx-auto text-md-right text-right ">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Give</a>
+      </li>
+    </ul>
+  </div>
 </nav>

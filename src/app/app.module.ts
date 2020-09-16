@@ -2,15 +2,13 @@ import {BrowserModule, Title} from '@angular/platform-browser';
 import {Component, NgModule, } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppHomeComponent } from './home/app.home.component';
-import {AppServicesComponent} from './services/app.services.component';
 import {
   AppAdultsComponent,
-  AppFamilyComponent, AppMinistriesComponent,
-  AppMissionsComponent,
+  AppFamilyComponent, AppMinistriesComponent, AppMissionIntroComponent,
   AppYoungAdultsComponent,
   AppYouthComponent
 } from './ministries/app.ministries.component';
-import {AppAboutUsComponent} from './about-us/app.aboutUs.component';
+import {AppOurBeliefsComponent} from './about-us/app.aboutUs.component';
 
 
 @Component({
@@ -47,25 +45,25 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
-  {path: 'services', component: AppServicesComponent},
-  {path: 'about-us', component: AppAboutUsComponent}
+  {path: 'our-beliefs', component: AppOurBeliefsComponent}
   ];
 
 @NgModule({
   declarations: [AppInitComponent,
     AppHomeComponent,
     AppMinistriesComponent,
-    AppAboutUsComponent,
+    AppOurBeliefsComponent,
     AppFamilyComponent,
     AppYouthComponent,
     AppYoungAdultsComponent,
     AppAdultsComponent,
-    AppMissionsComponent,
-    AppServicesComponent,
+    AppMissionIntroComponent,
     NavigationComponent,
     FooterComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled'
+  })],
   providers: [Title],
   bootstrap: [AppInitComponent],
   exports: [RouterModule]

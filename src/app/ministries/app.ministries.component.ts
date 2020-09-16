@@ -52,8 +52,12 @@ export class AppAdultsComponent {}
 
 
 @Component({
-  selector: 'app-missions',
-  templateUrl: './app.missions.component.html'
+  selector: 'app-mission-intro',
+  templateUrl: './app.missionIntro.component.html'
 })
-export class AppMissionsComponent {}
+export class AppMissionIntroComponent {
+  getUrl() {
+    return 'url(./assets/img/missions.jpg)';
+  }
+}
 

@@ -5,7 +5,7 @@ import {Title} from '@angular/platform-browser';
   selector: 'app-about-us',
   templateUrl: './app.aboutUs.component.html'
 })
-export class AppAboutUsComponent {
+export class AppOurBeliefsComponent {
   public constructor(private titleService: Title) {
     titleService.setTitle('About Us');
   }
