@@ -9,6 +9,7 @@ import {
   AppYouthComponent
 } from './ministries/app.ministries.component';
 import {AppOurBeliefsComponent} from './about-us/app.aboutUs.component';
+import {AppMissionsComponent} from './ministries/Missions/app.missions.component';
 
 
 @Component({
@@ -45,7 +46,8 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
-  {path: 'our-beliefs', component: AppOurBeliefsComponent}
+  {path: 'our-beliefs', component: AppOurBeliefsComponent},
+  {path: 'missions-outreach', component: AppMissionsComponent}
   ];
 
 @NgModule({
@@ -58,6 +60,7 @@ const routes: Routes = [
     AppYoungAdultsComponent,
     AppAdultsComponent,
     AppMissionIntroComponent,
+    AppMissionsComponent,
     NavigationComponent,
     FooterComponent
   ],
