@@ -10,12 +10,13 @@ import {
 } from './ministries/app.ministries.component';
 import {AppOurBeliefsComponent} from './about-us/app.aboutUs.component';
 import {AppMissionsComponent} from './ministries/Missions/app.missions.component';
+import {AppLoadingComponent} from './app.loading.component';
 
 
 @Component({
   selector: 'app-root',
   template: '<router-outlet></router-outlet>'
-})
+  })
 export class AppInitComponent {}
 
 // Navigation bar and footer have to be in the module so
@@ -43,7 +44,8 @@ export class FooterComponent {}
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: '/page-loading', pathMatch: 'full'},
+  {path: 'page-loading', component: AppLoadingComponent},
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
   {path: 'our-beliefs', component: AppOurBeliefsComponent},
@@ -52,6 +54,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [AppInitComponent,
+    AppLoadingComponent,
     AppHomeComponent,
     AppMinistriesComponent,
     AppOurBeliefsComponent,
