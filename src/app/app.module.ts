@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppHomeComponent } from './home/app.home.component';
 import {
   AppAdultsComponent,
-  AppFamilyComponent, AppMinistriesComponent, AppMissionIntroComponent,
+  AppFamilyComponent, AppMediaComponent, AppMinistriesComponent, AppMissionIntroComponent,
   AppYoungAdultsComponent,
   AppYouthComponent
 } from './ministries/app.ministries.component';
@@ -62,6 +62,7 @@ const routes: Routes = [
     AppYouthComponent,
     AppYoungAdultsComponent,
     AppAdultsComponent,
+    AppMediaComponent,
     AppMissionIntroComponent,
     AppMissionsComponent,
     NavigationComponent,

@@ -30,7 +30,7 @@ export class AppFamilyComponent {
 })
 export class AppYouthComponent {
   getUrl() {
-    return 'url(./assets/img/youth.jpg)';
+    return 'url(./assets/img/hsmin.jpg)';
   }
 }
 
@@ -57,7 +57,17 @@ export class AppAdultsComponent {}
 })
 export class AppMissionIntroComponent {
   getUrl() {
-    return 'url(./assets/img/missions.jpg)';
+    return 'url(./assets/img/mission.jpg)';
+  }
+}
+
+@Component({
+  selector: 'app-media',
+  templateUrl: './app.media.component.html'
+})
+export class AppMediaComponent {
+  getUrl() {
+    return 'url(./assets/img/media.jpg)';
   }
 }
 
