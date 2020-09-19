@@ -49,7 +49,7 @@ const routes: Routes = [
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
   {path: 'our-beliefs', component: AppOurBeliefsComponent},
-  {path: 'missions-outreach', component: AppMissionsComponent}
+  {path: 'ministries/missions-outreach', component: AppMissionsComponent}
   ];
 
 @NgModule({
