@@ -3,8 +3,7 @@ import {Component, NgModule, } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppHomeComponent } from './home/app.home.component';
 import {
-  AppAdultsComponent,
-  AppFamilyComponent, AppMediaComponent, AppMinistriesComponent, AppMissionIntroComponent,
+  AppFamilyComponent, AppMediaComponent, AppMinistriesComponent, AppMissionIntroComponent, AppPrayerComponent,
   AppYoungAdultsComponent,
   AppYouthComponent
 } from './ministries/app.ministries.component';
@@ -61,15 +60,16 @@ const routes: Routes = [
     AppFamilyComponent,
     AppYouthComponent,
     AppYoungAdultsComponent,
-    AppAdultsComponent,
     AppMediaComponent,
+    AppPrayerComponent,
     AppMissionIntroComponent,
     AppMissionsComponent,
     NavigationComponent,
     FooterComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes, {
-    anchorScrolling: 'enabled'
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
   })],
   providers: [Title],
   bootstrap: [AppInitComponent],

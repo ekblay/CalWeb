@@ -5,10 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Quantico:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 .logo{
   font-family: 'Homemade Apple', cursive;
   font-family: 'Quantico', sans-serif;
+}
+.default-font{
+  font-family: 'Epilogue', sans-serif;
 }
 .nav-link{
   font-family: 'Homemade Apple', cursive;
@@ -43,7 +46,7 @@ h5 {
   width: 80px;
 }
 .welcome-text{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Epilogue', sans-serif;
   color: #fafafe;
   font-weight: bolder;
 }
@@ -84,8 +87,8 @@ footer {
 
 
 .ministry-content{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 30px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 25px;
   line-height: 30px;
   font-weight: normal;
 

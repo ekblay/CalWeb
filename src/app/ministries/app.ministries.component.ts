@@ -44,12 +44,6 @@ getUrl() {
 }
 }
 
-@Component({
-  selector: 'app-adults',
-  templateUrl: './app.adults.component.html'
-})
-export class AppAdultsComponent {}
-
 
 @Component({
   selector: 'app-mission-intro',
@@ -68,6 +62,16 @@ export class AppMissionIntroComponent {
 export class AppMediaComponent {
   getUrl() {
     return 'url(./assets/img/media.jpg)';
+  }
+}
+
+@Component({
+  selector: 'app-prayer',
+  templateUrl: './app.prayer.component.html'
+})
+export class AppPrayerComponent {
+  getUrl() {
+    return 'url(./assets/img/prayer.jpg)';
   }
 }
 
