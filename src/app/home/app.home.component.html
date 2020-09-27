@@ -17,7 +17,7 @@
 
       <h1 class="welcome-text" >Welcome To Calvary Church</h1>
       <h2 class ="welcome-text" style="margin-bottom: 70px">Church outside the walls; Church beyond the walls</h2>
-      <div style="margin-bottom: 20px">
+      <div style="margin-bottom: 10px">
 
         <a href="https://calvarypei.churchcenter.com/people/forms/165700" data-open-in-church-center-modal="true"
            target="_blank"  class ="btn btn-info  btn-primary btn-lg  btn-responsive btn-format" style="margin-right: 3px">
@@ -35,7 +35,7 @@
           Need someone to talk to?</a>
       </div>
       <div>
-        <label class="">
+        <label>
           <h5 class = "welcome-text">Next Steps: </h5></label>
         <br>
         <a routerLink="/ministries"
@@ -81,7 +81,17 @@
        class ="btn btn-info  btn-primary btn-sm  btn-responsive btn-format" >
       <i class="fas fa-camera"></i>
       Stream here</a>
-
+<hr>
+    <label>
+      <p style="font-size: 25px">
+        New to Calvary? Text <a [href]="smsLinkWelcome">"Welcome"</a> to +1(902)2001070
+      </p>
+    </label>
+    <label>
+      <p style="font-size: 25px">
+        Stay in the loop with updates by texting <a [href]="smsLinkCalvary">"Calvary"</a> to +1(902)2001070
+      </p>
+    </label>
   </div>
 
 </div>
