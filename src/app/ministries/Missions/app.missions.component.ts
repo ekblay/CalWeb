@@ -9,5 +9,5 @@ export class AppMissionsComponent {
   public constructor(private titleService: Title) {
     titleService.setTitle('Missions and Outreach');
   }
-  image =  ['url(assets/img/outreach.jpg)'];
+  image =  ['url(assets/img/outreach.jpg)', 'url(assets/img/overcomers.jpg)', 'url(assets/img/international.jpg)'];
 }

@@ -4,14 +4,14 @@
   <app-nav-template></app-nav-template>
 
 
-  <div class="parallax parallax-image container4" [ngStyle]="{'background-image': image, 'min-height': '400px'}" >
+  <div class="parallax parallax-image container4" [ngStyle]="{'background-image': image[0], 'min-height': '400px'}" >
     <div >
       <h4  style="font-family: 'Indie Flower', cursive; font-size: 50px; color: white;">
         Missions and Outreach</h4>
     </div>
   </div>
 
-  <div class="container col-md-12 mb-4 text-center">
+<br>
     <h5 class="text-center ministry-content" style="margin-top: 5px; margin-bottom: 5px">
       <b>GLOBAL MISSIONARIES </b> </h5>
 
@@ -19,18 +19,35 @@
       <p> Internationally, we support the Global Workers associated with the Pentecostal Assemblies of Canada through our
         international office.  We are also associated with Jim and Marion Harris in Thailand and Caleb and Miki Bennett
         with Aroma Church in Taiwan. With special ties to our Haiti and El-Salvador Teams</p>
+      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo"> Read more</a>
+      <div id="demo" class="collapse">
+        <p>We also have our Canadian global workers, Scott & Melissa Williams in Spain.
+          They are showing the love of Christ through building relationships with people they meet and are running a
+          cafe at their church in their city.
 
-      <br>
+        </p>
+      </div>
+
       <hr>
 
-      <h5 class="text-center ministry-content" style="margin-top: 5px; margin-bottom: 5px">
-        <b>LOCAL MISSIONARY WORK</b> </h5>
+      <div class="parallax parallax-image container4" [ngStyle]="{'background-image': image[2], 'min-height': '300px'}" >
+        <div >
+          <h4  style="font-family: 'Indie Flower', cursive; font-size: 50px; color: white;">
+            Local Outreach</h4>
+        </div>
+      </div>
+
+
+      <br>
+
+      <h6 class="text-center ministry-content" style="margin-top: 5px; margin-bottom: 5px">
+        <b>LOCAL MISSIONARY WORK</b> </h6>
       <p>Locally we are supporting ministries that are making a difference in the lives of others.</p>
       <p> We are pleased to offer volunteers to, <b>the Salvation Army,The Island Pregnancy Crisis Centre,
         Solomon's Porch, Bible for Missions</b> and <b>Birthright PEI.</b> </p>
 
-      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo1"> Read more</a>
-      <div id="demo1" class="collapse">
+      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo2"> Read more</a>
+      <div id="demo2" class="collapse">
         <p>We support  Solomon's Porch, Birthright and the Pregnancy Centre financially . Since the closure of
           Grandmother's House,(the only shelter for women on PEI), women from Calvary have been reaching out to
           the former clients with a weekly event called Beautiful Night.</p>
@@ -41,13 +58,13 @@
 
       <h5 class="text-center ministry-content" style="margin-top: 5px; margin-bottom: 5px">
         <b>OUTREACH</b></h5>
-      <br>
-      <h5 class="text-left ministry-content" style="margin-top: 5px; margin-bottom: 5px">
-        <b>Visitation Outreach</b></h5>
+
+      <h6 class="text-left ministry-content" style="margin-top: 5px; margin-bottom: 5px">
+        <b>Visitation Outreach</b></h6>
       <p> It has  been over two years, but this outreach initiative is expanding greatly. </p>
 
-      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo2"> Read more</a>
-      <div id="demo2" class="collapse">
+      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo3"> Read more</a>
+      <div id="demo3" class="collapse">
         <p>It is a mission for Calvary outside
           the walls, where some of  home congregation visit some with of church family facing some challenging health
           concerns and although the road to recovery is sometimes long, the outcomes have been good.
@@ -57,17 +74,26 @@
         <p>Come join us and we take Calvary outside the walls.</p>
       </div>
 
+<hr>
 
-      <h5 class="text-left ministry-content" style="margin-top: 5px; margin-bottom: 5px">
+
+      <div class="parallax parallax-image container4" [ngStyle]="{'background-image': image[1], 'min-height': '300px'}" >
+        <div >
+          <h4  style="font-family: 'Indie Flower', cursive; font-size: 50px; color: white;">
+            Overcomers Outreach</h4>
+        </div>
+      </div>
+
+      <h6 class="text-left ministry-content" style="margin-top: 5px; margin-bottom: 5px">
         <br>
-        <b>Overcomers Outreach</b> </h5>
+        <b>Overcomers Outreach</b> </h6>
 
       <p> Overcomers Outreach is bridge between 12 groups and the church . A Christ-centered, non-profit corporation
         dedicated to reaching out to people with problems, with addiction, compulsion or codependency within Churches of
         all denominations.</p>
 
-      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo3"> Read more</a>
-      <div id="demo3" class="collapse">
+      <a type="button" class="btn btn-info btn-md" data-toggle="collapse" data-target="#demo4"> Read more</a>
+      <div id="demo4" class="collapse">
         <p>A ministry providing Christian resources, education through written materials, and tools to
           initiate and maintain 12- steps support groups. The Overcomers purpose is to praise the Lord, to study God's word
           relating to the 12 steps of Alcoholics Anonymous and relevant subjects, to share with one another in strictest
@@ -79,8 +105,8 @@
 
     </div>
 
-  </div>
 </div>
+
 <!--Footer-->
 <app-footer-template> </app-footer-template>
 
