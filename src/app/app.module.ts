@@ -43,7 +43,7 @@ export class FooterComponent {}
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/page-loading', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'page-loading', component: AppLoadingComponent},
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
