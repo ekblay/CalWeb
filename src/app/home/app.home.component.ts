@@ -8,8 +8,8 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class AppHomeComponent {
   images = ['./assets/img/church.jpg', 'url(./assets/img/jump_dark.jpg)'];
-  smsLinkWelcome = 'sms:+19022001070&body=Welcome';
-  smsLinkCalvary = 'sms:+19022001070&body=Calvary';
+  smsLinkWelcome = 'sms:9022001070&body=Welcome';
+  smsLinkCalvary = 'sms:9022001070&body=Calvary';
 
 
   sanitize(url: string) {
