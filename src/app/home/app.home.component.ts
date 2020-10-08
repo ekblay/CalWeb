@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,12 @@ export class AppHomeComponent {
   smsLinkWelcome = 'sms:+19022001070&body=Welcome';
   smsLinkCalvary = 'sms:+19022001070&body=Calvary';
 
-  public constructor(private titleService: Title) {
+
+  sanitize(url: string) {
+    return this.sanitizer.bypassSecurityTrustUrl(url);
+  }
+
+  public constructor(private titleService: Title, private sanitizer: DomSanitizer) {
     titleService.setTitle('Home - Calvary Church');
   }
 }

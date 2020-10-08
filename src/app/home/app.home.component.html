@@ -84,12 +84,12 @@
 <hr>
     <label>
       <p style="font-size: 25px">
-        New to Calvary? Text <a [href]="smsLinkWelcome">"Welcome"</a> to +1(902)2001070
+        New to Calvary? Text <a [href]="sanitize(smsLinkWelcome)">"Welcome"</a> to +1(902)2001070
       </p>
     </label>
     <label>
       <p style="font-size: 25px">
-        Stay in the loop with updates by texting <a [href]="smsLinkCalvary">"Calvary"</a> to +1(902)2001070
+        Stay in the loop with updates by texting <a [href]="sanitize(smsLinkCalvary)">"Calvary"</a> to +1(902)2001070
       </p>
     </label>
   </div>
