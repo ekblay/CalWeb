@@ -10,8 +10,8 @@ y# See http://help.github.com/ignore-files/ for more about ignoring files.
 # dependencies
 /node_modules
 package-lock.json
-/bootstrap-4.4.1-dist
-/fontawesome-free-5.13.0-web
+src/bootstrap-4.4.1-dist
+src/fontawesome-free-5.13.0-web
 
 # profiling files
 chrome-profiler-events.json

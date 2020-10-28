@@ -9,7 +9,8 @@ import {
 } from './ministries/app.ministries.component';
 import {AppOurBeliefsComponent} from './about-us/app.aboutUs.component';
 import {AppMissionsComponent} from './ministries/Missions/app.missions.component';
-import {AppLoadingComponent} from './app.loading.component';
+import {AppEventsComponent} from './events/app.events.component';
+
 
 
 @Component({
@@ -44,16 +45,15 @@ export class FooterComponent {}
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'page-loading', component: AppLoadingComponent},
   {path: 'home', component: AppHomeComponent},
   {path: 'ministries', component: AppMinistriesComponent},
   {path: 'our-beliefs', component: AppOurBeliefsComponent},
-  {path: 'ministries/missions-outreach', component: AppMissionsComponent}
+  {path: 'ministries/missions-outreach', component: AppMissionsComponent},
+  {path: 'events', component: AppEventsComponent}
   ];
 
 @NgModule({
   declarations: [AppInitComponent,
-    AppLoadingComponent,
     AppHomeComponent,
     AppMinistriesComponent,
     AppOurBeliefsComponent,
@@ -64,6 +64,7 @@ const routes: Routes = [
     AppPrayerComponent,
     AppMissionIntroComponent,
     AppMissionsComponent,
+    AppEventsComponent,
     NavigationComponent,
     FooterComponent
   ],
