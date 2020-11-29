@@ -7,7 +7,7 @@ import {DomSanitizer} from '@angular/platform-browser';
   templateUrl: './app.home.component.html'
 })
 export class AppHomeComponent {
-  images = ['./assets/img/church.jpg', 'url(./assets/img/jump_dark.jpg)'];
+  images = ['./assets/img/church.jpg', 'url(./assets/img/jump_dark.jpg)', 'url(./assets/img/charity.jpg)'];
   smsLinkWelcome = 'sms:+19022001070';
   smsLinkCalvary = 'sms:+19022001070';
 
