@@ -9,6 +9,6 @@ export class AppEventsComponent {
   public constructor(private titleService: Title) {
     titleService.setTitle('Events');
   }
-  image = '/assets/img/febCal.png';
+  image = '/assets/img/decCal.png';
 
 }
