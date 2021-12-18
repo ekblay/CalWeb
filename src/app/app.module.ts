@@ -10,6 +10,7 @@ import {
 import {AppOurBeliefsComponent} from './about-us/app.aboutUs.component';
 import {AppMissionsComponent} from './ministries/Missions/app.missions.component';
 import {AppEventsComponent} from './events/app.events.component';
+import {AppCovid19Component} from './covid/app.covid_19.component';
 
 
 
@@ -49,7 +50,8 @@ const routes: Routes = [
   {path: 'ministries', component: AppMinistriesComponent},
   {path: 'our-beliefs', component: AppOurBeliefsComponent},
   {path: 'ministries/missions-outreach', component: AppMissionsComponent},
-  {path: 'events', component: AppEventsComponent}
+  {path: 'events', component: AppEventsComponent},
+  {path: 'covid-19-update', component: AppCovid19Component}
   ];
 
 @NgModule({
@@ -66,7 +68,8 @@ const routes: Routes = [
     AppMissionsComponent,
     AppEventsComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    AppCovid19Component
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes, {
     anchorScrolling: 'enabled',
